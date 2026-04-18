@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Wishes Display</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="display-page">
+    <main class="display-shell">
+      <h1>🎉 Happy Birthday! 🎂</h1>
+      <p id="greeting-text" class="greeting-text">Loading birthday greetings...</p>
+      <p id="greeting-meta" class="greeting-meta"></p>
+      <div class="decor-images" aria-hidden="true">
+        <img src="/assets/decor-1.svg" alt="" class="decor-image" onerror="this.style.display='none'" />
+        <img src="/assets/decor-2.svg" alt="" class="decor-image" onerror="this.style.display='none'" />
+      </div>
+    </main>
+
+    <aside class="qr-corner">
+      <h2>Submit a Wish</h2>
+      <img id="qr-code" src="/assets/qr-code.svg" alt="QR code to submission form" />
+      <p><a href="/submit">Open form</a></p>
+    </aside>
+
+    <script src="/display.js" defer></script>
+  </body>
+</html>

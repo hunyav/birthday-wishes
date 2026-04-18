@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Birthday Greeting</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="submit-page">
+    <main class="submit-shell">
+      <h1>Send a Birthday Greeting</h1>
+      <form id="greeting-form" class="greeting-form">
+        <label>
+          Greeting
+          <textarea name="message" required maxlength="500" placeholder="Write your birthday wish..."></textarea>
+        </label>
+        <label>
+          Name (optional)
+          <input type="text" name="name" maxlength="100" placeholder="Your name" />
+        </label>
+        <button type="submit">Submit Greeting</button>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+      <p><a href="/">Back to birthday display</a></p>
+    </main>
+
+    <script src="/submit.js" defer></script>
+  </body>
+</html>

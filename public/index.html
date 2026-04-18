@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramona Birthday TV Banner</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <header>
+        <h1>Happy Birthday, Ramona!</h1>
+      </header>
+
+      <main>
+        <section class="wishes-panel">
+          <h2>Birthday Wishes</h2>
+          <ul id="wishesList" class="wishes-list"></ul>
+        </section>
+
+        <aside class="images-panel">
+          <div class="image-slot">
+            <img src="/assets/banner-photo-1.jpg" alt="Birthday decorative image 1" />
+            <small>If not loaded, place your image at /public/assets/banner-photo-1.jpg</small>
+          </div>
+          <div class="image-slot">
+            <img src="/assets/banner-photo-2.jpg" alt="Birthday decorative image 2" />
+            <small>If not loaded, place your image at /public/assets/banner-photo-2.jpg</small>
+          </div>
+          <div class="image-slot">
+            <img src="/assets/banner-photo-3.jpg" alt="Birthday decorative image 3" />
+            <small>If not loaded, place your image at /public/assets/banner-photo-3.jpg</small>
+          </div>
+        </aside>
+      </main>
+
+      <footer>
+        <div class="qr-wrapper">
+          <img src="/assets/qr-code.png" alt="QR code to submit birthday wishes" />
+          <p class="qr-caption">Scan to send Ramona a wish ➜ /submit</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/tv.js" defer></script>
+  </body>
+</html>

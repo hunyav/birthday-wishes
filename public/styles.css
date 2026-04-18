@@ -1,0 +1,203 @@
+:root {
+  --bg: #180a3d;
+  --bg-accent: #26125f;
+  --panel: rgba(255, 255, 255, 0.12);
+  --text: #fff5ff;
+  --highlight: #ffcb2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, #5e2ca5, var(--bg));
+}
+
+.screen {
+  min-height: 100vh;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 5rem);
+  letter-spacing: 0.08em;
+  color: var(--highlight);
+  text-shadow: 0 0 20px rgba(255, 203, 47, 0.35);
+  text-transform: uppercase;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  min-height: 0;
+}
+
+.wishes-panel {
+  background: var(--panel);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 1.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.wishes-panel h2 {
+  margin-top: 0;
+}
+
+.wishes-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  overflow: auto;
+}
+
+.wishes-list li {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+
+.wishes-list .message {
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem;
+}
+
+.wishes-list .sender {
+  font-weight: 700;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.images-panel {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.image-slot {
+  background: var(--panel);
+  border-radius: 16px;
+  border: 2px dashed rgba(255, 255, 255, 0.35);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.75rem;
+}
+
+.image-slot img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.qr-wrapper {
+  width: min(240px, 30vw);
+  background: var(--panel);
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 0.7rem;
+}
+
+.qr-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.qr-caption {
+  margin: 0.45rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.form-card {
+  width: min(700px, 95vw);
+  background: rgba(18, 8, 46, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  padding: 1.4rem;
+}
+
+label {
+  display: block;
+  margin: 0.7rem 0 0.3rem;
+  font-weight: 700;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font: inherit;
+}
+
+input,
+textarea {
+  padding: 0.7rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #231f2f;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 0.9rem;
+  padding: 0.85rem;
+  background: linear-gradient(45deg, #ffcb2f, #ff8f3f);
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 0.8rem;
+  min-height: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .images-panel {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}

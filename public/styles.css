@@ -1,0 +1,141 @@
+:root {
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.display-page {
+  animation: rainbowShift 18s infinite alternate ease-in-out;
+  background: linear-gradient(120deg, #ff6ec4, #7873f5, #4adede);
+  background-size: 250% 250%;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.display-shell {
+  max-width: 850px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1.25rem;
+  padding: 2rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.greeting-text {
+  min-height: 5.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.greeting-meta {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  min-height: 1.4rem;
+}
+
+.decor-images {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.decor-image {
+  width: min(200px, 28vw);
+  max-height: 180px;
+  object-fit: contain;
+}
+
+.qr-corner {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 1rem;
+  padding: 0.75rem;
+  width: 180px;
+  text-align: center;
+}
+
+.qr-corner h2 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 1rem;
+}
+
+.qr-corner img {
+  width: 100%;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.qr-corner a,
+.submit-shell a {
+  color: #ffe066;
+}
+
+.submit-page {
+  background: linear-gradient(150deg, #403b4a, #e7e9bb);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.submit-shell {
+  width: min(560px, 95vw);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.greeting-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.greeting-form label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+textarea,
+input,
+button {
+  font: inherit;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.7rem;
+}
+
+button {
+  cursor: pointer;
+  background: #ffe066;
+  color: #343a40;
+  font-weight: 700;
+}
+
+#status {
+  min-height: 1.4rem;
+}
+
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}

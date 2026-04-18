@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220" role="img" aria-label="Balloons illustration">
+  <rect width="320" height="220" fill="none"/>
+  <ellipse cx="95" cy="80" rx="45" ry="58" fill="#ffd166"/>
+  <ellipse cx="165" cy="75" rx="45" ry="58" fill="#ef476f"/>
+  <ellipse cx="230" cy="85" rx="45" ry="58" fill="#06d6a0"/>
+  <path d="M95 135 C95 165 85 180 80 210" stroke="#fff" stroke-width="3" fill="none"/>
+  <path d="M165 130 C165 160 175 175 182 210" stroke="#fff" stroke-width="3" fill="none"/>
+  <path d="M230 142 C230 170 220 188 214 210" stroke="#fff" stroke-width="3" fill="none"/>
+</svg>
